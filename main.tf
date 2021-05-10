@@ -40,7 +40,9 @@ variable "storage_disk" {
   }
 }
 
-variable "diskName" {}
+variable "diskName" {
+  default = "mydisk22"
+}
 resource "azurerm_managed_disk" "example" {
   name                 = var.diskName
   location             = var.region
