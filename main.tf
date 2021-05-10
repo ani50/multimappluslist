@@ -41,6 +41,7 @@ variable "storage_disk" {
 }
 
 variable "diskName" {
+  type = string
   default = "mydisk22"
 }
 resource "azurerm_managed_disk" "example" {
